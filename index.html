@@ -222,73 +222,41 @@ message Photo {
 				</section>
 
 				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides pinch your way to the overview.
-					</p>
+                    <section>
+    					<h2>Thrift</h2>
+    					<p>
+                           Facebook开源的RPC框架
+    					</p>
+                        <pre>
+                            <code>
+          struct UserProfile {
+            1: i32 uid,
+            2: string name,
+            3: string blurb
+          }
+          service UserStorage {
+            void store(1: UserProfile user),
+            UserProfile retrieve(1: i32 uid)
+          }                        
+                            </code>
+                        </pre>
+				    </section>
+                    
+                    <section>
+                        <h3>数据类型</h3>
+                        <ul>
+                            <li>bool: A boolean value (true or false)</li>
+                            <li>byte: An 8-bit signed integer</li>
+                            <li>i16: A 16-bit signed integer</li>
+                            <li>i32: A 32-bit signed integer</li>
+                            <li>i64: A 64-bit signed integer</li>
+                            <li>double: A 64-bit floating point number</li>
+                            <li>string: A text string encoded using UTF-8 encoding</li>
+                            <li>binary</li>
+                            <li>List, Set, Map</li>
+                        </ul>                       
+                    </section>
 				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
- 
-
-				<section>
-					<section data-state="alert">
-						<h2>Global State</h2>
-						<p>
-							Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-							will be added as a class to the document element when the slide is open. This lets you
-							apply broader style changes, like switching the background.
-						</p>
-						<a href="#/7/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-state="blackout">
-						<h2>"blackout"</h2>
-						<a href="#/7/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-state="soothe">
-						<h2>"soothe"</h2>
-						<a href="#/7/0" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
- 
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would 
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-					</blockquote>
-				</section>
-				
  
 				
 				<section>
